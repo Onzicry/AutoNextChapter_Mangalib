@@ -2,7 +2,7 @@
 // @name         Mangalib Auto Next Chapter (Mobile Support)
 // @namespace    https://github.com/Onzicry/AutoNextChapter_Mangalib
 // @homepageURL  https://github.com/Onzicry/AutoNextChapter_Mangalib
-// @version      1.5.5
+// @version      1.6
 // @description  Автоматический переход на следующую главу (ПК + мобильная версия)
 // @copyright    2025, Onzicry
 // @author       Onzicry
