@@ -8,6 +8,10 @@
 // @author       Onzicry
 // @match        https://mangalib.me/*/read*
 // @match        https://mangalib.me/*
+// @match        https://hentailib.me/*/read*
+// @match        https://hentailib.me/*
+// @match        https://slashlib.me/*/read*
+// @match        https://slashlib.me/*
 // @grant        none
 // ==/UserScript==
 
@@ -19,16 +23,11 @@
     let scriptActive = true;
 
     function showPageNotification(message) {
-        // Удаляем старые уведомления
         const oldNotifications = document.querySelectorAll('.mangalib-notification');
         oldNotifications.forEach(n => n.remove());
         clearTimeout(notificationTimeout);
-
-        // Создаем новое уведомление
         const notification = document.createElement('div');
         notification.className = 'mangalib-notification';
-
-        // Стили для мобильных и десктопных устройств
         notification.style.cssText = `
             position: fixed;
             bottom: 20px;
@@ -53,7 +52,6 @@
 
         notification.textContent = message;
 
-        // Добавляем анимацию
         const style = document.createElement('style');
         style.textContent = `
             @keyframes fadeIn {
@@ -68,7 +66,6 @@
 
         document.body.appendChild(notification);
 
-        // Автоматическое скрытие через 5 секунд
         notificationTimeout = setTimeout(() => {
             notification.style.opacity = '0';
             notification.style.transition = 'opacity 0.3s ease-out';
@@ -98,7 +95,6 @@
             return null;
         }
 
-        // Проверка десктопной версии
         const desktopNextBtn = document.querySelector('.aa5_br:not(.aa5_aa6)');
         if (desktopNextBtn) {
             if ((desktopNextBtn.textContent.includes('На страницу тайтла') ||
@@ -112,7 +108,6 @@
             if (desktopNextBtn.href) return desktopNextBtn.href;
         }
 
-        // Мобильная версия (если не последняя глава)
         const mobileNextBtn = document.querySelector('.aew_br.aew_n2');
         if (mobileNextBtn && mobileNextBtn.href) {
             return mobileNextBtn.href;
@@ -145,12 +140,9 @@
         }
     }
 
-    // Инициализация
     function init() {
-        // Проверяем сразу при загрузке
         checkMobileLastChapter();
 
-        // Добавляем обработчики событий
         const eventConfig = { passive: true };
         window.addEventListener('scroll', checkAndRedirect, eventConfig);
         window.addEventListener('load', checkAndRedirect, eventConfig);
@@ -167,6 +159,5 @@
         console.log('Mangalib Auto Next (Mobile Support) loaded');
     }
 
-    // Запускаем скрипт
     init();
 })();

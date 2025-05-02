@@ -8,6 +8,10 @@
 // @author       Onzicry
 // @match        https://mangalib.me/*/read*
 // @match        https://mangalib.me/*
+// @match        https://hentailib.me/*/read*
+// @match        https://hentailib.me/*
+// @match        https://slashlib.me/*/read*
+// @match        https://slashlib.me/*
 // @grant        none
 // ==/UserScript==
 
