@@ -14,8 +14,6 @@
 // @match        https://slashlib.me/*/read*
 // @match        https://slashlib.me/*
 // @grant        none
-// @updateURL       https://raw.githubusercontent.com/Onzicry/AutoNextChapter_Mangalib/refs/heads/main/build.js
-// @downloadURL     https://raw.githubusercontent.com/Onzicry/AutoNextChapter_Mangalib/refs/heads/main/build.js
 // ==/UserScript==
 
 (function() {
