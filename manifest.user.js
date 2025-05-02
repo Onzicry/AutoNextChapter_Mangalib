@@ -9,12 +9,15 @@
 // @license         AGPL-3.0-or-later; https://www.gnu.org/licenses/agpl-3.0.txt
 // @version         $(VERSION)
 //
-// @updateURL       manifest.user.js
-// @downloadURL     manifest.user.js
+// @updateURL       https://github.com/Onzicry/AutoNextChapter_Mangalib/blob/main/manifest.user.js
+// @downloadURL     https://github.com/Onzicry/AutoNextChapter_Mangalib/blob/main/manifest.user.js
 //
-// @match           
-// @match           
-// @match           
+// @match           https://mangalib.me/*/read*
+// @match           https://mangalib.me/*
+// @match           https://hentailib.me/*/read*
+// @match           https://hentailib.me/*
+// @match           https://slashlib.me/*/read*
+// @match           https://slashlib.me/*        
 //
 // @run-at          document-end
 // ==/UserScript==
