@@ -23,16 +23,22 @@
 
         const notification = document.createElement('div');
         notification.style.position = 'fixed';
-        notification.style.bottom = '20px';
+        notification.style.bottom = '30px';
         notification.style.left = '50%';
         notification.style.transform = 'translateX(-50%)';
-        notification.style.backgroundColor = '#333';
-        notification.style.color = '#fff';
+        notification.style.backgroundColor = 'rgba(0, 0, 0, 0.85)';
+        notification.style.color = 'white';
         notification.style.padding = '12px 24px';
-        notification.style.borderRadius = '4px';
-        notification.style.zIndex = '9999';
-        notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
-        notification.style.animation = 'fadeIn 0.3s ease-out';
+        notification.style.borderRadius = '25px';
+        notification.style.zIndex = '99999';
+        notification.style.fontFamily = 'Arial, sans-serif';
+        notification.style.fontSize = '14px';
+        notification.style.backdropFilter = 'blur(5px)';
+        notification.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+        notification.style.animation = 'fadeIn 0.5s ease-out';
+        notification.style.maxWidth = '80%';
+        notification.style.textAlign = 'center';
+        notification.style.border = '1px solid rgba(255, 255, 255, 0.1)';
         notification.textContent = message;
 
         // Добавляем стили для анимации
@@ -62,7 +68,7 @@
         if (desktopNextBtn) {
             // Проверяем текст кнопки
             if (desktopNextBtn.textContent.includes('На страницу тайтла')) {
-                showPageNotification('Вы достигли последней главы. Следующей главы нет.');
+                showPageNotification('Вы достигли последней главы.');
                 return null;
             }
             if (desktopNextBtn?.href) return desktopNextBtn.href;
@@ -78,7 +84,7 @@
             '.next-chapter',
             '[data-next-chapter]'
         ];
-        
+
         for (const selector of fallbackSelectors) {
             const btn = document.querySelector(selector);
             if (btn?.href) return btn.href;
