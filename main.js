@@ -37,7 +37,7 @@
             if (nextChapterUrl) {
                 setTimeout(() => {
                     window.location.href = nextChapterUrl; // Автопереход без подтверждения
-                }, 400); // Задержка 1.5 сек
+                }, 400); // Задержка 0.4 сек
             }
         }
     }
@@ -45,11 +45,6 @@
     // Слушаем прокрутку и загрузку страницы
     window.addEventListener('scroll', checkAndRedirect);
     window.addEventListener('load', checkAndRedirect);
-
-    // Горячая клавиша → (стрелка вправо) для принудительного перехода
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight') checkAndRedirect();
-    });
 
     console.log('Mangalib Auto Next (Auto) loaded');
 })();
