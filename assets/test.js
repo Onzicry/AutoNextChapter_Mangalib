@@ -6,6 +6,7 @@
 // @description  Автоматический переход на следующую главу (ПК + мобильная версия)
 // @copyright    2025, Onzicry
 // @author       Onzicry
+// @license      AGPL-3.0-or-later; https://www.gnu.org/licenses/agpl-3.0.txt
 // @match        https://mangalib.me/*/read*
 // @match        https://mangalib.me/*
 // @match        https://hentailib.me/*/read*
