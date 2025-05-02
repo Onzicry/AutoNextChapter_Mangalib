@@ -12,6 +12,5 @@
 // @match        https://slashlib.me/*
 // @grant        none
 // @license      AGPL-3.0-or-later; https://www.gnu.org/licenses/agpl-3.0.txt
-// @downloadURL  https://raw.githubusercontent.com/ваш-логин/ваш-репозиторий/ветка/имя-файла.user.js
-// @updateURL    https://raw.githubusercontent.com/ваш-логин/ваш-репозиторий/ветка/имя-файла.user.js
+
 // ==/UserScript==
