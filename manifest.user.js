@@ -1,5 +1,5 @@
 // ==UserScript==
-// @namespace       https://github.com/qt-kaneko/Shikiplayer
+// @namespace       https://github.com/Onzicry/AutoNextChapter_Mangalib
 // @name            $(NAME)
 // @description     $(DESCRIPTION)
 // @description:ru  $(DESCRIPTION_RU)
