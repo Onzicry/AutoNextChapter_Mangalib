@@ -7,6 +7,7 @@
 // @copyright    2025, Onzicry
 // @author       Onzicry
 // @match        https://mangalib.me/*/read*
+// @match        https://mangalib.me/*
 // @grant        none
 // ==/UserScript==
 
