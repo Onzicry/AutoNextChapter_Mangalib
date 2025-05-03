@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Mangalib Auto Next",
+  "version": "1.0",
+  "description": "Автопереход на следующую главу",
+
+  "content_scripts": [{
+    "matches": [
+      "*://mangalib.me/*",
+      "*://hentailib.me/*",
+      "*://slashlib.me/*"
+    ],
+    "js": ["content.js"]
+  }],
+
+  "browser_action": {
+    "default_icon": "icons/icon48.png",
+    "default_popup": "popup/popup.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "mangalib-extension@example.com"
+    }
+  }
+}
